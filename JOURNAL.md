@@ -6,7 +6,7 @@
   ==================================================================
 -->
 
-## 11/4/2025 - WebSec Guardian  
+## 11/4/2025 9:09 AM - WebSec Guardian  
 
 Day 1 (Project kickoff & research)
 
@@ -27,4 +27,25 @@ Day 3 (Mechanical design & 3D case)
     Modeled case layout concept (dimensions, mounting points) in Fusion360 / CAD.
     Exported STL for front/back case and iterated on fastening points and ventilation.
     Rendered a prototype image for repo documentation (placeholder image used).  
+
+## 11/4/2025 9:10 AM - WebSec Guardian  
+
+Day 4 (Wiring diagrams & prototyping plan)
+
+    Drew wiring-diagram.png showing connections: ESP32 SPI → TFT, TP4056 → LiPo, buzzer, switch, SD module.
+    Added notes on pin choices, voltage rails, JST connector recommendations, and safety.
+    Planned breadboard test steps and required tools (soldering, JST crimp). Time spent: 10 hours
+
+Day 5 (Firmware architecture & module design)
+
+    Designed firmware modular structure: wifiscanner, btscanner, display, logger, gps, ota.
+    Wrote API/CLI plan for logging format and HTTP upload schema (fields: timestamp, ssid, bssid, rssi, channel, gps).
+    Prepared PlatformIO/Arduino structure and dependencies list. Time spent: 23 hours
+
+Day 6 (Passive scanning experiments)
+
+    Ran local experiments with ESP32 example sketches (WiFi.scanNetworks, BLEScanner) on devboard I have (or simulated).
+    Measured timings and power draw; recorded sample outputs and filtered noisy SSIDs.
+    Determined appropriate scan interval (tradeoff between battery and detection latency).![marauder sketch](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODI0OCwicHVyIjoiYmxvYl9pZCJ9fQ==--93b4c212e29671584aa39f78761232f5801c1b56/marauder%20sketch.jpeg)
+  
 

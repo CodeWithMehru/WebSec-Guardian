@@ -49,3 +49,30 @@ Day 6 (Passive scanning experiments)
     Determined appropriate scan interval (tradeoff between battery and detection latency).![marauder sketch](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODI0OCwicHVyIjoiYmxvYl9pZCJ9fQ==--93b4c212e29671584aa39f78761232f5801c1b56/marauder%20sketch.jpeg)
   
 
+## 11/4/2025 9:11 AM - WebSec Guardian  
+
+Day 7 (Logging & data format)
+
+    Created CSV/JSON log schema for SD and HTTP upload. Example entry: ts,ssid,bssid,rssi,chan,gps_lat,gps_lng.
+    Wrote logger pseudo-code and SD rotation policy (max file size, daily logs).
+    Planned secure upload: HTTPS + token-based auth (no plaintext). Time spent: 16 hours
+
+Day 8 (Safety, ethics, and documentation)
+
+    Expanded README safety section; explicitly marked all offensive features as DISABLED.
+    Wrote testing policy: only test on owned/permissioned networks, record consent.
+    Added image disclaimer in README and updated journal. Time spent: 8 hours
+
+Day 9 (UI/UX: display & alerts)
+
+    Designed on-screen UI for TFT: status bar, top N SSIDs, RSSI bar graph, alert banner.
+    Decided buzzer behavior for passive alert thresholds (short beep for new unknown AP, longer for suspicious spike).
+    Sketched CLI commands for querying logs and setting thresholds. Time spent: 15 hours
+
+Day 10 (Roadmap, testing plan & next steps)
+
+    Compiled final roadmap: purchase parts, assemble prototype, run controlled tests, publish firmware v0.1.
+    Created test plan (lab tests, field tests, consent forms) and checklist for submission.
+    Prepared files to push to repo (firmware skeleton, BOM, wiring, journal).![handwritten diagram](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODI0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--88bdc8b3a7247cf70f981939765d76bfcc8ea638/handwritten%20diagram.png)
+  
+
